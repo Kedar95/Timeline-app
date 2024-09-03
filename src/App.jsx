@@ -50,6 +50,7 @@ const Timeline = () => {
       <h1>TimeLine</h1>
       {posts.map(post => (
         <div key={post.hash} className="post">
+           <p>{post?.text}</p>  {/*In api the text value is coming null so, on UI it is displaying blank*/}
           <div className="post-header">
             <img
               src={post.author.pfp}
