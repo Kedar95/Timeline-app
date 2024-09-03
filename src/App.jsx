@@ -74,14 +74,14 @@ const Timeline = () => {
             </button>
             <button
               type="button"
-              className="btn btn-primary"
+              className="btn btn-warning"
               onClick={() => handleComment(post.hash)}
             >
               Comment ({post.comments.count})
             </button>
             <button
               type="button"
-              className="btn btn-primary"
+              className="btn btn-danger"
               onClick={() => handleRepost(post.hash)}
             >
               Repost ({post.reposts})
